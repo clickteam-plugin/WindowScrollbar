@@ -1,0 +1,352 @@
+/*
+ * Copyright 2009-2013 Olivier WENGER
+ *     http://www.magicspark.org/ or http://oulydev.free.fr/
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "..\..\inc\ccx.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#ifndef _DEBUG
+#define _EXT_FILEFLAGS_DEBUG (0)
+#else
+#define _EXT_FILEFLAGS_DEBUG (VS_FF_DEBUG)
+#endif
+#define EXT_FILEFLAGS (_EXT_FILEFLAGS_DEBUG)
+
+1 VERSIONINFO
+ FILEVERSION 1,0,2,0
+ PRODUCTVERSION 1,0,2,0
+ FILEFLAGSMASK 0x0L
+ FILEFLAGS EXT_FILEFLAGS
+ FILEOS 0x10001L
+ FILETYPE VFT_DLL
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+#ifndef RUN_ONLY
+            VALUE "Comments", "MMF's edittime version\0"
+#endif
+            VALUE "CompanyName", "MagicSpark.org\0"
+#ifndef RUN_ONLY
+            VALUE "FileDescription", "Show and interact with frame window scrollbars.\0"
+#else
+            VALUE "FileDescription", "\0"
+#endif
+            VALUE "FileVersion", "1.0.2\0"
+            VALUE "InternalName", "WindowScrollbar\0"
+            VALUE "LegalCopyright", "Copyright © 2009-2013 WENGER Olivier\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "windowscrollbar.mfx\0"
+#if EXT_FILEFLAGS & VS_FF_PRIVATEBUILD
+            VALUE "PrivateBuild", "Private build\0"
+#endif
+            VALUE "ProductName", "WindowScrollbar\0"
+            VALUE "ProductVersion", "1.0.2\0"
+#if EXT_FILEFLAGS & VS_FF_SPECIALBUILD
+            VALUE "SpecialBuild", "Special build\0"
+#endif
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+KPX_MAGICNUMBER RCDATA MOVEABLE PURE 
+BEGIN
+    0x2516, 0x5908
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_ICON$(EDITOR)       BITMAP  MOVEABLE PURE   "RES\\EXTICON.BMP"
+#else
+EXO_ICON                BITMAP  MOVEABLE PURE   "RES\\EXTICON.BMP"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_IMAGE$(EDITOR)      BITMAP  MOVEABLE PURE   "RES\\EXTIMG.BMP"
+#else
+EXO_IMAGE               BITMAP  MOVEABLE PURE   "RES\\EXTIMG.BMP"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_ACTIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_ACTIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "HSB (horizontal scrollbar)"
+        BEGIN
+            MENUITEM "Show HSB", ACT_IDMN_SHOWHSB
+            MENUITEM "Set HSB pos", ACT_IDMN_SETHSBPOS
+            MENUITEM "Set HSB range", ACT_IDMN_SETHSBRANGE
+            MENUITEM "Set HSB page", ACT_IDMN_SETHSBPAGE
+        END
+        POPUP "VSB (vertical scrollbar)"
+        BEGIN
+            MENUITEM "Show VSB", ACT_IDMN_SHOWVSB
+            MENUITEM "Set VSB pos", ACT_IDMN_SETVSBPOS
+            MENUITEM "Set VSB range", ACT_IDMN_SETVSBRANGE
+            MENUITEM "Set VSB page", ACT_IDMN_SETVSBPAGE
+        END
+        MENUITEM "Clear last error", ACT_IDMN_CLEARLASTERROR
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_CONDITIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_CONDITIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "HSB (horizontal scrollbar)"
+        BEGIN
+            MENUITEM "On scroll", CND_IDMN_ONHSBSCROLL
+            MENUITEM "Need HSB?", CND_IDMN_NEEDHSB
+        END
+        POPUP "VSB (vertical scrollbar)"
+        BEGIN
+            MENUITEM "On scroll", CND_IDMN_ONVSBSCROLL
+            MENUITEM "Need VSB?", CND_IDMN_NEEDVSB
+        END
+        MENUITEM "On error", CND_IDMN_ONERROR
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_EXPRESSIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_EXPRESSIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "HSB (horizontal scrollbar)"
+        BEGIN
+            MENUITEM "Get HSB pos", EXP_IDMN_GETHSBPOS
+            MENUITEM "Get HSB min", EXP_IDMN_GETHSBMIN
+            MENUITEM "Get HSB max", EXP_IDMN_GETHSBMAX
+            MENUITEM "Get HSB page", EXP_IDMN_GETHSBPAGE
+            MENUITEM SEPARATOR
+            MENUITEM "Get HSB height", EXP_IDMN_GETHSBHEIGHT
+        END
+        POPUP "VSB (vertical scrollbar)"
+        BEGIN
+            MENUITEM "Get VSB pos", EXP_IDMN_GETVSBPOS
+            MENUITEM "Get VSB min", EXP_IDMN_GETVSBMIN
+            MENUITEM "Get VSB max", EXP_IDMN_GETVSBMAX
+            MENUITEM "Get VSB page", EXP_IDMN_GETVSBPAGE
+            MENUITEM SEPARATOR
+            MENUITEM "Get VSB width", EXP_IDMN_GETVSBWIDTH
+        END
+        MENUITEM "Get last error", EXP_IDMN_GETLASTERROR
+    END
+END
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+#ifdef APSTUDIO_INVOKED
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""..\\..\\Inc\\ccx.h""\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    KPX_MARK                "MF2"
+    KPX_NAME                "WinScrollBar"
+END
+
+#ifndef RUN_ONLY
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDST_OBJNAME            "WinScrollBar"
+    IDST_AUTHOR             "MagicSpark.org"
+    IDST_COPYRIGHT          "Copyright © 2009-2013 WENGER Olivier"
+    IDST_COMMENT            "Show and interact with frame window scrollbars."
+    IDST_HTTP               "http://www.magicspark.org/"
+END
+#endif /* RUN_ONLY */
+
+/* Conditions, actions, expressions strings */
+#ifndef RUN_ONLY
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ACT_IDS_SHOWHSB             "%o show HSB %0 (boolean)"
+    ACT_IDS_SHOWVSB             "%o show VSB %0 (boolean)"
+    ACT_IDS_SETHSBPOS           "%o set HSB pos to %0"
+    ACT_IDS_SETVSBPOS           "%o set VSB pos to %0"
+    ACT_IDS_SETHSBRANGE         "%o set HSB range from %0 to %1"
+    ACT_IDS_SETVSBRANGE         "%o set VSB range from %0 to %1"
+    ACT_IDS_SETHSBPAGE          "%o set HSB page to %0"
+    ACT_IDS_SETVSBPAGE          "%o set VSB page to %0"
+    ACT_IDS_CLEARLASTERROR      "%o clear last error"
+
+    ACT_IDP_SHOWHSB_0           "0 == hide, anything else == show"
+    ACT_IDP_SHOWVSB_0           "0 == hide, anything else == show"
+    ACT_IDP_SETHSBPOS_0         "Position"
+    ACT_IDP_SETVSBPOS_0         "Position"
+    ACT_IDP_SETHSBRANGE_0       "Min (left)"
+    ACT_IDP_SETHSBRANGE_1       "Max (right)"
+    ACT_IDP_SETVSBRANGE_0       "Min (top)"
+    ACT_IDP_SETVSBRANGE_1       "Max (bottom)"
+    ACT_IDP_SETHSBPAGE_0        "Page"
+    ACT_IDP_SETVSBPAGE_0        "Page"
+END
+#endif /* RUN_ONLY */
+
+#ifndef RUN_ONLY
+STRINGTABLE DISCARDABLE 
+BEGIN
+    CND_IDS_ONERROR             "%o on error"
+    CND_IDS_ONHSBSCROLL         "%o on HSB scroll"
+    CND_IDS_ONVSBSCROLL         "%o on VSB scroll"
+    CND_IDS_NEEDHSB             "%o need HSB?"
+    CND_IDS_NEEDVSB             "%o need VSB?"
+END
+#endif /* RUN_ONLY */
+
+#ifndef RUN_ONLY
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EXP_IDS_GETHSBPOS           "getHSBPos("
+    EXP_IDS_GETVSBPOS           "getVSBPos("
+    EXP_IDS_GETHSBPAGE          "getHSBPage("
+    EXP_IDS_GETVSBPAGE          "getVSBPage("
+    EXP_IDS_GETHSBMIN           "getHSBMin("
+    EXP_IDS_GETVSBMIN           "getVSBMin("
+    EXP_IDS_GETHSBMAX           "getHSBMax("
+    EXP_IDS_GETVSBMAX           "getVSBMax("
+    EXP_IDS_GETLASTERROR        "getLastError("
+    EXP_IDS_GETHSBHEIGHT        "getHSBHeight("
+    EXP_IDS_GETVSBWIDTH         "getVSBWidth("
+END
+#endif /* RUN_ONLY */
+
+/* Debugging strings */
+#ifndef RUN_ONLY
+STRINGTABLE DISCARDABLE
+BEGIN
+    DB_IDS_ERRORSCOUNT          "# errors: %d"
+    DB_IDS_LASTERROR            "Last error: %d (system error code)"
+END
+#endif /* RUN_ONLY */
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+/* END OF FILE */
